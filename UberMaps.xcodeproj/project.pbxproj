@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9176158C26511F7400853C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176158B26511F7400853C42 /* AppDelegate.swift */; };
 		9176158E26511F7400853C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176158D26511F7400853C42 /* SceneDelegate.swift */; };
-		9176159026511F7400853C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176158F26511F7400853C42 /* ViewController.swift */; };
-		9176159326511F7400853C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9176159126511F7400853C42 /* Main.storyboard */; };
 		9176159526511F7700853C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9176159426511F7700853C42 /* Assets.xcassets */; };
 		9176159826511F7700853C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9176159626511F7700853C42 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		9176158826511F7400853C42 /* UberMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9176158B26511F7400853C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9176158D26511F7400853C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9176158F26511F7400853C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9176159226511F7400853C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9176159426511F7700853C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9176159726511F7700853C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9176159926511F7700853C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,61 @@
 		9176158A26511F7400853C42 /* UberMaps */ = {
 			isa = PBXGroup;
 			children = (
-				9176158B26511F7400853C42 /* AppDelegate.swift */,
-				9176158D26511F7400853C42 /* SceneDelegate.swift */,
-				9176158F26511F7400853C42 /* ViewController.swift */,
-				9176159126511F7400853C42 /* Main.storyboard */,
-				9176159426511F7700853C42 /* Assets.xcassets */,
-				9176159626511F7700853C42 /* LaunchScreen.storyboard */,
+				917615A426511F9B00853C42 /* LaunchScreen */,
+				917615A326511F9800853C42 /* Application */,
+				917615A226511F9200853C42 /* Networking */,
+				917615A126511F9000853C42 /* View */,
+				917615A026511F8E00853C42 /* Model */,
+				9176159F26511F8700853C42 /* Screen */,
 				9176159926511F7700853C42 /* Info.plist */,
 			);
 			path = UberMaps;
+			sourceTree = "<group>";
+		};
+		9176159F26511F8700853C42 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		917615A026511F8E00853C42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		917615A126511F9000853C42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		917615A226511F9200853C42 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		917615A326511F9800853C42 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9176158B26511F7400853C42 /* AppDelegate.swift */,
+				9176158D26511F7400853C42 /* SceneDelegate.swift */,
+				9176159426511F7700853C42 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		917615A426511F9B00853C42 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9176159626511F7700853C42 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +168,6 @@
 			files = (
 				9176159826511F7700853C42 /* LaunchScreen.storyboard in Resources */,
 				9176159526511F7700853C42 /* Assets.xcassets in Resources */,
-				9176159326511F7400853C42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9176159026511F7400853C42 /* ViewController.swift in Sources */,
 				9176158C26511F7400853C42 /* AppDelegate.swift in Sources */,
 				9176158E26511F7400853C42 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9176159126511F7400853C42 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9176159226511F7400853C42 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9176159626511F7700853C42 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L3HV9SUR5;
 				INFOPLIST_FILE = UberMaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L3HV9SUR5;
 				INFOPLIST_FILE = UberMaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
