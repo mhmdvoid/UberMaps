@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9125651F265231770066BD4C /* TextFieldOfContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9125651E265231770066BD4C /* TextFieldOfContainer.swift */; };
 		9176158C26511F7400853C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176158B26511F7400853C42 /* AppDelegate.swift */; };
 		9176158E26511F7400853C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176158D26511F7400853C42 /* SceneDelegate.swift */; };
 		9176159526511F7700853C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9176159426511F7700853C42 /* Assets.xcassets */; };
 		9176159826511F7700853C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9176159626511F7700853C42 /* LaunchScreen.storyboard */; };
+		917615A92651215700853C42 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615A82651215700853C42 /* LoginVC.swift */; };
+		917615AD26513EA500853C42 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615AC26513EA500853C42 /* UIColor+Extension.swift */; };
+		917615AF2651CC8600853C42 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615AE2651CC8600853C42 /* UIView+Extension.swift */; };
+		917615B32651EEF700853C42 /* ViewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615B22651EEF700853C42 /* ViewTextField.swift */; };
+		917615B52651EFD900853C42 /* UIViewOfText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615B42651EFD900853C42 /* UIViewOfText.swift */; };
+		917615B72651F0AD00853C42 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917615B62651F0AC00853C42 /* Separator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9125651E265231770066BD4C /* TextFieldOfContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldOfContainer.swift; sourceTree = "<group>"; };
 		9176158826511F7400853C42 /* UberMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9176158B26511F7400853C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9176158D26511F7400853C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9176159426511F7700853C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9176159726511F7700853C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9176159926511F7700853C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917615A82651215700853C42 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		917615AC26513EA500853C42 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		917615AE2651CC8600853C42 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		917615B22651EEF700853C42 /* ViewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextField.swift; sourceTree = "<group>"; };
+		917615B42651EFD900853C42 /* UIViewOfText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewOfText.swift; sourceTree = "<group>"; };
+		917615B62651F0AC00853C42 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 		9176158A26511F7400853C42 /* UberMaps */ = {
 			isa = PBXGroup;
 			children = (
+				917615AA26513E7F00853C42 /* Util */,
 				917615A426511F9B00853C42 /* LaunchScreen */,
 				917615A326511F9800853C42 /* Application */,
 				917615A226511F9200853C42 /* Networking */,
@@ -66,6 +81,7 @@
 		9176159F26511F8700853C42 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				917615A82651215700853C42 /* LoginVC.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -80,6 +96,9 @@
 		917615A126511F9000853C42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				917615B42651EFD900853C42 /* UIViewOfText.swift */,
+				917615B62651F0AC00853C42 /* Separator.swift */,
+				9125651E265231770066BD4C /* TextFieldOfContainer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +126,32 @@
 				9176159626511F7700853C42 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		917615AA26513E7F00853C42 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				917615B12651EEE400853C42 /* Interface */,
+				917615AB26513E8F00853C42 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		917615AB26513E8F00853C42 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				917615AC26513EA500853C42 /* UIColor+Extension.swift */,
+				917615AE2651CC8600853C42 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		917615B12651EEE400853C42 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				917615B22651EEF700853C42 /* ViewTextField.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +225,13 @@
 			files = (
 				9176158C26511F7400853C42 /* AppDelegate.swift in Sources */,
 				9176158E26511F7400853C42 /* SceneDelegate.swift in Sources */,
+				917615B32651EEF700853C42 /* ViewTextField.swift in Sources */,
+				917615B72651F0AD00853C42 /* Separator.swift in Sources */,
+				917615A92651215700853C42 /* LoginVC.swift in Sources */,
+				917615B52651EFD900853C42 /* UIViewOfText.swift in Sources */,
+				917615AF2651CC8600853C42 /* UIView+Extension.swift in Sources */,
+				9125651F265231770066BD4C /* TextFieldOfContainer.swift in Sources */,
+				917615AD26513EA500853C42 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
